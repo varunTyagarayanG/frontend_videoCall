@@ -137,7 +137,7 @@ export default {
     },
 
     initializeWebSocket(peer_id) {
-      this.socket = new WebSocket(`${import.meta.env.VITE_WS_ENDPOINT}ws/message/${peer_id}/`)
+      this.socket = new WebSocket(`${import.meta.env.VITE_WS_ENDPOINT}/ws/message/${peer_id}/`)
       this.socket.onmessage = (event) => {
         let message = JSON.parse(event.data);
         switch (message.status) {

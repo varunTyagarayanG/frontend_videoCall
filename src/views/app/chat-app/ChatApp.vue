@@ -115,7 +115,7 @@ export default {
   },
   created() {
     this.connection = new WebSocket(`${import.meta.env.VITE_WS_ENDPOINT}ws/notification/`)
-    this.message_connection = new WebSocket(`${import.meta.env.VITE_WS_ENDPOINT}ws/message/${this.$store.state.activeUser.username}/`)
+    this.message_connection = new WebSocket(`${import.meta.env.VITE_WS_ENDPOINT}/ws/message/${this.$store.state.activeUser.username}/`)
 
     this.connection.onmessage = (event) => {
       let message = JSON.parse(event.data).message;
