@@ -17,7 +17,7 @@
     <div v-show="callingStatus === 'connected'">
 
 
-      <video ref="localVideo" src="" id="localVideo" autoplay="autoplay"></video>
+      <video ref="localVideo" src="" id="localVideo" autoplay muted></video>
 
       <video ref="remoteVideo" src="" id="remoteVideo" autoplay></video>
 
