@@ -98,8 +98,17 @@ export default {
 
     handleCall(call) {
       this.call = call
-      this.getUserMedia({video: true, audio: true}, this.streamCall)
+      navigator.mediaDevices.getUserMedia({
+        video: true,
+        audio: {
+          echoCancellation: true,
+          noiseSuppression: true,
+          autoGainControl: true
+        }
+      }).then(this.streamCall)
+        .catch(err => console.error('Error accessing media devices:', err));
     },
+
 
     streamCall(stream) {
       this.callingStatus = 'connected'
