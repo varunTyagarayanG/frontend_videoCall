@@ -13,25 +13,25 @@
         <ul class="nav nav-pills nav-justified mb-0" id="pills-tab-justified" role="tablist">
           <li class="nav-item">
             <a class="nav-link active" id="pills-chat-tab-justified" data-toggle="pill" href="#pills-chat-justified"
-               role="tab" aria-controls="pills-chat-justified" aria-selected="true">
+              role="tab" aria-controls="pills-chat-justified" aria-selected="true">
               <img src="/src/assets/icons/message-circle.svg" alt="">
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" id="pills-addchat-tab-justified" data-toggle="pill" href="#pills-addchat-justified"
-               role="tab" aria-controls="pills-addchat-justified" aria-selected="false">
+              role="tab" aria-controls="pills-addchat-justified" aria-selected="false">
               <img src="/src/assets/icons/edit-3.svg" alt="">
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" id="pills-profile-tab-justified" data-toggle="pill" href="#pills-profile-justified"
-               role="tab" aria-controls="pills-profile-justified" aria-selected="false">
+              role="tab" aria-controls="pills-profile-justified" aria-selected="false">
               <img src="/src/assets/icons/user.svg" alt="">
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" id="pills-setting-tab-justified" data-toggle="pill" href="#pills-setting-justified"
-               role="tab" aria-controls="pills-setting-justified" aria-selected="false">
+              role="tab" aria-controls="pills-setting-justified" aria-selected="false">
               <img src="/src/assets/icons/settings.svg" alt="">
             </a>
           </li>
@@ -56,7 +56,7 @@ import Header from "./particals/leftbar/Header.vue";
 import Search from "./particals/leftbar/Search.vue";
 import UserList from "./particals/leftbar/UserList.vue";
 import MessageWindow from "./particals/rightbar/MessageWindow.vue";
-import {store} from "./store";
+import { store } from "./store";
 import axios from "../../../axios";
 
 export default {
@@ -99,7 +99,7 @@ export default {
       console.log("openCallViewWindow", data)
       let routeData = this.$router.resolve({
         name: 'receiverView',
-        params: {username: data.data.receiver, sender: data.data.sender},
+        params: { username: data.data.receiver, sender: data.data.sender },
         query: {
           display: JSON.stringify(data.display),
           peer_id: data.data.peer_id
@@ -155,6 +155,4 @@ export default {
 }
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

@@ -1,12 +1,10 @@
 <template>
   <div style="height: 100vh" class="d-flex justify-content-center align-items-center">
     <div class="text-center align-self-center" v-show="callingStatus === 'calling'">
-<!--      <audio src="/public/sounds/iphone-ringtone-47958.mp3" controls loop autoplay></audio>-->
+      <!--      <audio src="/public/sounds/iphone-ringtone-47958.mp3" controls loop autoplay></audio>-->
       <center>
         <div class="pulse">
-          <img height="250" :src="displayUser.photo"
-               class="rounded-circle"
-               alt="">
+          <img height="250" :src="displayUser.photo" class="rounded-circle" alt="">
         </div>
       </center>
 
@@ -86,7 +84,7 @@ export default {
     },
 
     answerCall() {
-      this.getUserMedia({video: true, audio: true}, this.streamCall, (error) => {
+      this.getUserMedia({ video: true, audio: true }, this.streamCall, (error) => {
         console.error(error)
       })
     },

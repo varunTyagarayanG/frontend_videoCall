@@ -5,7 +5,7 @@
 
     <div class="chat-body" ref="chatBody">
       <div v-for="message in selected_user.messages" class="chat-message"
-           :class="message.sender !== selected_user.username ? 'right': 'left'">
+        :class="message.sender !== selected_user.username ? 'right' : 'left'">
         <div class="text">
           <span>{{ message.text }}</span>
         </div>
@@ -102,6 +102,4 @@ export default {
 }
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

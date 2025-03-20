@@ -3,9 +3,7 @@
     <div class="text-center align-self-center" v-show="callingStatus === 'calling'">
       <center>
         <div class="pulse">
-          <img height="250" :src="displayUser.photo"
-               class="rounded-circle"
-               alt="">
+          <img height="250" :src="displayUser.photo" class="rounded-circle" alt="">
         </div>
       </center>
       <h2 class="mt-5 text-black-50 mb-5">Calling <strong>{{ displayUser.name }}</strong> .....</h2>
@@ -42,7 +40,7 @@
 
 <script>
 import axios from "../../../axios";
-import {Peer} from "peerjs"
+import { Peer } from "peerjs"
 import MicButton from "../../../components/buttons/MicButton.vue";
 import VideoButton from "../../../components/buttons/VideoButton.vue";
 
@@ -205,7 +203,4 @@ export default {
 }
 </script>
 
-<style scoped>
-
-
-</style>
+<style scoped></style>

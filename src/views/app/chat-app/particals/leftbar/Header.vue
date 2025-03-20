@@ -5,8 +5,8 @@
         <ul class="list-unstyled mb-0">
           <li class="media">
             <img class="align-self-center mr-2"
-                 src="http://themesbox.in/admin-templates/gappa/html/light/assets/images/logo.svg"
-                 alt="Generic placeholder image">
+              src="http://themesbox.in/admin-templates/gappa/html/light/assets/images/logo.svg"
+              alt="Generic placeholder image">
             <div class="media-body">
               <h5 class="mb-0 mt-2"> {{ $store.state.activeUser.name }}</h5>
             </div>
@@ -15,7 +15,7 @@
       </div>
       <div class="col-3">
         <a @click.prevent="logout" href="/logout" data-toggle="tooltip" data-placement="right" title=""
-           data-original-title="Logout">
+          data-original-title="Logout">
           <img src="/src/assets/icons/log-out.svg" alt="">
         </a>
       </div>
@@ -41,6 +41,4 @@ export default {
 }
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>
